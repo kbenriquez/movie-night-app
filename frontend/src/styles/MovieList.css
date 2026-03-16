@@ -1,0 +1,53 @@
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 180px);
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 1400px) {
+    .movie-grid {
+        grid-template-columns: repeat(5, 180px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .movie-grid {
+        grid-template-columns: repeat(4, 180px);
+    }
+}
+
+@media (max-width: 900px) {
+    .movie-grid {
+        grid-template-columns: repeat(3, 180px);
+    }
+}
+
+@media (max-width: 600px) {
+    .movie-grid {
+        grid-template-columns: repeat(2, 180px);
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.pagination button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #222;
+    color: white;
+}
+
+.pagination button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
